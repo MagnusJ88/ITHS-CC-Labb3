@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HouseFB
+﻿namespace HouseFB
 {
     public class HouseBuilder
     {
-        private House _house;
+        private readonly House _house;
 
         public HouseBuilder()
         {

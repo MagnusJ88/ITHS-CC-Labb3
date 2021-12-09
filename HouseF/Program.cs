@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Här lägger vi Factory");
+﻿global using HouseF;
+
+HouseFactory factory = new();
+
+House house = factory.CreateHouse("SMALLhouse");
+Console.WriteLine(house);

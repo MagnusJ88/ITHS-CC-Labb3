@@ -23,7 +23,7 @@ namespace HouseFB.Tests
         [TestCase(-3)]
         public void SetNumberOfRooms_GivenNegativeInt_ThrowsArgumentException(int rooms)
         {
-           
+
             Assert.Throws<ArgumentException>(() => _houseBuilder.SetNoOfRooms(rooms).Build());
         }
         [TestCase(3)]

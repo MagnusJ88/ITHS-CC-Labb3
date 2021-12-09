@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace HouseF
 {
@@ -34,15 +30,15 @@ namespace HouseF
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new();
             sb.AppendLine($"This house is located at {StreetAdress}.");
             sb.AppendLine($"It has {NoOfRooms} rooms and {NoOfWindows} windows");
             if (HasSwimmingPool & HasGarage)
             {
-                sb.Append($"It is very fancy and have both a swimming pool, and a garage with place for {ParkingSpotsInGarage} car");
+                sb.Append($"It is very fancy and has both a swimming pool, and a garage with space for {ParkingSpotsInGarage} car");
                 if (ParkingSpotsInGarage > 1)
                 {
-                    sb.Append("s");
+                    sb.Append('s');
                 }
                 sb.AppendLine(".");
             }
@@ -52,7 +48,7 @@ namespace HouseF
             }
             else if (HasGarage)
             {
-                sb.AppendLine($"It has a garage with place for {ParkingSpotsInGarage} cars");
+                sb.AppendLine($"It has a garage with space for {ParkingSpotsInGarage} cars");
             }
             return sb.ToString();
         }
